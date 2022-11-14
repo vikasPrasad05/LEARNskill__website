@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="C:\Users\prasa\Desktop\html\style.css">
+    <title>css style</title>
+    <style>
+      body{
+          background-color: #94D1BE;
+
+      }
+
+      .container{
+          padding: 0px 50px;
+      }
+  </style>
+</head>
+
+<body>
+
+
+    <div>
+        <h1 align="center">CSS STYLE</h1>
+        <a href="firstpage.html">Back</a>
+
+        <hr>
+        
+        <h3> CSS Introduction</h3>
+        
+        <ul>
+            <lI>CSS is the language we use to style an HTML document.</li><br>
+            <li>CSS describes how HTML elements should be displayed.</li><br>
+            <li>This tutorial will teach you CSS from basic to advanced.</li>
+
+        </ul>
+
+    </div>
+    <h3>What is CSS?</h3> 
+        <ul>
+            <li>CSS stands for Cascading Style Sheets</li><br>
+            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li><br>
+            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li><br>
+            <li>External stylesheets are stored in CSS files</li><br>
+            <li>HTML elements tell the browser how to display the content</li><br>
+            <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+            </li>
+        </ul>
+    <div>
+        <div class="container wrapper">
+            <div id="top">
+              <h3>#Welcome to My Homepage</h3>
+              <p>Use the menu to select different Stylesheets.</p>
+            </div>
+        
+              <div id="main">
+                <h3>Same Page Different Stylesheets</h3>
+                <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. <br> You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br><br>
+                    
+                <a href="https://www.w3schools.com/css/demo_default.htm#"target="_blank" onclick="reStyle(0);return false">Stylesheets</a></li>
+            
+                </p>
+                
+             </div>
+             <div>
+              <h2>See Example</h2>
+              <img src="" alt="">
+
+             </div>
+              <div id="#">
+                <h3>Side-Bar</h3>
+                <p id="overflow">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            </div>
+          </div>
+          
+    </div>
+  </div>
+  
+    <br><hr>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
