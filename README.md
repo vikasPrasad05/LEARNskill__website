@@ -1,9 +1,8 @@
 # LEARNskill__website
 ===========================
 This area is to keep code I write a project for all.
+Code present here is under ORBIT. (creating a uniqu websites).
 
-COPYING / LICENSE
-Code present here is under ORBIT. (create a uniqu website).
-
+this is learning website for all coders.
 AUTHOR
 vikasPrasad05
